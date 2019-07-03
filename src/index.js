@@ -4,8 +4,10 @@ import App from "./Components/App";
 import {ApolloProvider} from "react-apollo-hooks"
 import Client from "./Apollo/Client";
 
-ReactDOM.render(<ApolloProvider Client={Client}>
-    <App />
+ReactDOM.render(
+    <ApolloProvider client={Client}>
+        <App />
     </ApolloProvider>
-, document.getElementById("root"));
+, document.getElementById("root")
+);
 
